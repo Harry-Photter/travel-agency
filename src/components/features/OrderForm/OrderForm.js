@@ -6,11 +6,15 @@ import { Row, Col } from 'react-flexbox-grid';
 import pricing from '../../../data/pricing.json';
 import OrderOption from '../OrderOption/OrderOption';
 
-const OrderForm = ({tripCost, options, setOrderOption}) => (
+const OrderForm = ({ tripCost, options, setOrderOption }) => (
   <Row>
     {pricing.map(option => (
       <Col md={4} key={option.id}>
-        <OrderOption currentValue={options[option.id]} setOrderOption={setOrderOption} {...option}/>
+        <OrderOption
+          currentValue={options[option.id]}
+          {...option}
+          setOrderOption={setOrderOption}
+        />
       </Col>
     ))}
     <Col xs={12}>
