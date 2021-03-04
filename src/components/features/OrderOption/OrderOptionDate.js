@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './OrderOption.scss';
 import DatePicker from 'react-datepicker';
@@ -6,14 +6,13 @@ import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
 
 const OrderOptionDate = ( props ) => {
-  const [startDate, setStartDate] = useState(new Date());
-
+  
   return (
     <div className={styles.text}>
       <DatePicker 
-        selected={startDate} 
+        selected={props.currentValue} 
+        placeholderText={'chose start day'}
         onChange={date => {
-          setStartDate(date);
           props.setOptionValue(date);
         }} />
     </div>
@@ -22,6 +21,7 @@ const OrderOptionDate = ( props ) => {
 
 OrderOptionDate.propTypes = {
   setOptionValue: PropTypes.func,
+  currentValue: PropTypes.string,
 };
 
 export default OrderOptionDate;

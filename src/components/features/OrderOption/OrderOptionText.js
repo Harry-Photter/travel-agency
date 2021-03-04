@@ -7,6 +7,8 @@ const OrderOptionText = ( props ) => {
     <div className={styles.text}>
       <input
         type="text"
+        placeholder={'text'}
+        value={props.currentValue}
         onChange={event => props.setOptionValue(event.currentTarget.value)}
       />
     </div>
@@ -15,6 +17,7 @@ const OrderOptionText = ( props ) => {
 
 OrderOptionText.propTypes = {
   setOptionValue: PropTypes.func,
+  currentValue: PropTypes.string,
 };
 
 export default OrderOptionText;
