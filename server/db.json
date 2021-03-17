@@ -1,0 +1,39 @@
+{
+  "orders": [
+    {
+      "car-rental": "suv",
+      "accommodation": "suite",
+      "features": [
+        "all-inclusive",
+        "kitchen"
+      ],
+      "adults": "2",
+      "children": "1",
+      "name": "wqer",
+      "contact": "32435",
+      "start-date": "2021-03-13T23:00:00.000Z",
+      "tripId": "$51,380.61",
+      "tripName": "5cc1d10130dfa407e2e54e20",
+      "countryCode": "TUR",
+      "totalCost": "$3,500",
+      "id": 1
+    },
+    {
+      "car-rental": "full",
+      "accommodation": "suite",
+      "features": [
+        "kitchen"
+      ],
+      "adults": 1,
+      "children": "1",
+      "name": "sdfghjkl",
+      "contact": "123456y7ui9",
+      "start-date": "2021-03-20T23:00:00.000Z",
+      "tripId": "5cc1d10181a30e85c8d9ad4a",
+      "tripName": "Pleasant trek in outstanding Togo",
+      "countryCode": "TGO",
+      "totalCost": "$45,629",
+      "id": 2
+    }
+  ]
+}
